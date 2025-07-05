@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuisioner Banda Neira</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Kuisioner Penelitian</h1>
+    <form id="kuisionerForm">
+      <label>Usia:<input type="number" name="usia" required></label>
+      <label>Jenis Kelamin:
+        <select name="gender" required>
+          <option value="">Pilih</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </label>
+      <label>Domisili:<input type="text" name="domisili" required></label>
+      <label>Pernah ke Banda Neira?
+        <select name="pernah" required>
+          <option value="">Pilih</option>
+          <option value="Ya">Ya</option>
+          <option value="Belum">Belum</option>
+        </select>
+      </label>
+      <label>Pernah dengar kutipan?
+        <select name="dengar" required>
+          <option value="">Pilih</option>
+          <option value="Ya">Ya</option>
+          <option value="Tidak">Tidak</option>
+        </select>
+      </label>
+      <label>Seberapa menarik kutipan? (1-5)
+        <input type="range" name="menarik" min="1" max="5" value="3" />
+      </label>
+      <label>Penasaran dengan Banda Neira? (1-5)
+        <input type="range" name="penasaran" min="1" max="5" value="3" />
+      </label>
+      <label>Memotivasi berkunjung? (1-5)
+        <input type="range" name="motivasi" min="1" max="5" value="3" />
+      </label>
+      <label>Makna kutipan:<textarea name="makna" rows="2"></textarea></label>
+      <label>Niat berkunjung ke Banda Neira? (1-5)
+        <input type="range" name="niat" min="1" max="5" value="3" />
+      </label>
+      <label>Faktor pendorong utama:
+        <select name="faktor" required>
+          <option value="">Pilih</option>
+          <option value="Kutipan">Kutipan</option>
+          <option value="Alam & Budaya">Alam & Budaya</option>
+          <option value="Media Sosial">Media Sosial</option>
+          <option value="Teman">Teman</option>
+        </select>
+      </label>
+      <label>Efektivitas kutipan:
+        <select name="efektif" required>
+          <option value="">Pilih</option>
+          <option value="Sangat Efektif">Sangat Efektif</option>
+          <option value="Efektif">Efektif</option>
+          <option value="Biasa Saja">Biasa Saja</option>
+          <option value="Tidak Efektif">Tidak Efektif</option>
+        </select>
+      </label>
+      <label>Saran promosi:<textarea name="saran" rows="2"></textarea></label>
+      <button type="submit">Kirim</button>
+    </form>
+    <a href="admin.html" class="admin-link">Login Admin</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
